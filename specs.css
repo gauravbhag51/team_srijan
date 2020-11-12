@@ -1,0 +1,97 @@
+.container{
+    background-color: black;
+    height: 100%;
+    display: flex;
+    font-family: 'Metal Mania', cursive;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.intro{
+    position: absolute;
+}
+.name{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color:red;
+}
+.fb{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.name h1{
+    padding: 10px;
+    font-size: 5rem;
+    text-decoration: underline red;
+    margin:0px;
+}
+.f{
+    font-size: 3rem;
+    color: orange;
+}
+.b{
+    font-size: 3rem;
+    color: white;
+}
+.c{
+    font-size: 3rem;
+    color: green;
+}
+.pic{
+    /* padding-top: 15px; */
+    width:100%;
+}
+.pic img{
+    width:100%;
+}
+.heading{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: red;
+}
+.specs{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: blanchedalmond;
+}
+.specs h5{
+    padding-left: 10px;
+}
+
+@media screen and (max-width: 800px){
+    .pic{
+        /* padding-top: 15px; */
+        width:100%;
+    }
+    .pic img{
+        width:100%;
+    }
+    .container{
+        padding-top: 10%;
+    }
+    .name h1{
+        padding: 10px;
+        font-size: 3rem;
+        text-decoration: underline red;
+        margin:0px;
+    }
+    .f{
+        font-size: 1.5rem;
+        color: orange;
+    }
+    .b{
+        font-size: 1.5rem;
+        color: white;
+    }
+    .c{
+        font-size: 1.5rem;
+        color: green;
+    }
+    h2{
+        font-size: 1.5rem;
+    }
+    h5{
+        font-size: 1rem;
+    }
+}

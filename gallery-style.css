@@ -1,0 +1,117 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+.body{
+    width:100%;
+    /* height:100vh; */
+    padding-top: 100px;
+    font-family: 'Crimson Pro',"serif";
+    z-index:1;
+    background-color: rgba(0,0,0,0.8);
+    color:white;
+}
+.navbar{
+    color: rgba(255,255,255,1);
+    font-size: 1.2rem;
+    width: 100%;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255,255,255,1);
+}
+.dropdown-menu{
+    background-color: rgb(209, 208, 208);
+}
+.dropdown-toggle::after {
+    display: none;
+    margin-left: 0;
+    vertical-align:0;
+    content: "";
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 0;
+    border-left: 0;
+}
+.TSI-19,.TSI-18{
+
+    font-family: 'Metal Mania', cursive;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.TSI-19{
+    animation: appear 1s 1 ease-in-out;
+}
+.pics{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    /* height: 100vh; */
+}
+.pics img{
+    width:400px;
+    height: 300px;
+    margin: 20px 15px;
+    border: blanchedalmond solid 10px;
+    border-radius: 50px;
+    cursor: pointer;
+    
+}
+.pics img:hover{
+    transform: scale(1.15);
+}
+.pages{
+    padding:20px;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.pages h3{
+    font-size: 32px;
+    margin: 0px;
+}
+@keyframes appear{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.disappear{
+    opacity:0;
+    transform: translateY(20px);
+    transition: 0.5s all ease-in-out;
+}
+.appear{
+    opacity: 1;
+    transform: translateY(0);
+}
+@media screen and (max-width: 800px){
+    .TSI-19,.TSI-18{
+        width:100%;
+        padding: 15px;
+    }
+    .pics img{
+        width:95%;
+        height: 300px;
+        margin: 20px 15px;
+        border: blanchedalmond solid 10px;
+        border-radius: 50px;
+        cursor: pointer;
+        
+    }
+}

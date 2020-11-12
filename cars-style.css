@@ -1,0 +1,142 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+.body{
+    width:100%;
+    height:100%;
+    font-family: 'Crimson Pro',"serif";
+    z-index:1;
+}
+.navbar{
+    color: rgba(255,255,255,1);
+    font-size: 1.2rem;
+    width: 100%;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255,255,255,1);
+}
+.dropdown-menu{
+    background-color: rgb(209, 208, 208);
+}
+.dropdown-toggle::after {
+    display: none;
+    margin-left: 0;
+    vertical-align:0;
+    content: "";
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 0;
+    border-left: 0;
+}
+.intro{
+    overflow-x: hidden;
+    position: relative;
+    width:100%;
+    height:100vh;
+    z-index: -1;
+}
+.intro-pic{
+    width: 100%;
+    height:100vh;
+    z-index:-1000;
+    object-fit: cover;
+    /* opacity: 0; */
+}
+.container{
+    height: 100%;
+    width:60%;
+    background-color: rgba(0,0,0,0.8);
+}
+.cars{
+    text-align: center;
+    position: absolute;
+    top:0px;
+    left:0;
+    width:100%;
+    height: 100vh;
+}
+/* .carouselExampleIndicators{
+    
+} */
+.container{
+    width: 50%;
+   display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.c{
+    width:440px;
+    /* padding:30px; */
+    color:blanchedalmond;
+    font-family: 'Metal Mania', cursive;
+}
+.carousel-inner img{
+    border:solid blanchedalmond;
+    border-radius: 10px;
+    width:100%;
+    height: 100%;
+}
+.c h1{
+    font-size: 1.5rem;
+    margin:10px;
+}
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23343a40' width='8' height='8' viewBox='0 0 8 8' %3e%3cpath d='M2.75 0l-1.5 1.5L3.75 4l-2.5 2.5L2.75 8l4-4-4-4z'/%3e%3c/svg%3e");
+    opacity: 1;
+}
+.carousel-control-prev-icon{
+    opacity: 1;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23343a40' width='8' height='8' viewBox='0 0 8 8'%3e%3cpath d='M5.25 0l-4 4 4 4 1.5-1.5L4.25 4l2.5-2.5L5.25 0z'/%3e%3c/svg%3e");
+}
+/* .carousel-control-next-icon, .carousel-control-prev-icon {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: no-repeat 50%/100% 100%;
+} */
+footer{
+    width: 100%;
+    display:block;
+    padding:30px 20px 30px 30px ;
+    background-color: rgb(52,58,64);
+    position: absolute;
+    bottom:0;
+}
+.foot a{
+    margin:1%;
+}
+
+
+
+
+
+@keyframes appear{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+
+@media screen and (max-width: 800px){
+    .container{
+        width:100%;
+    }
+    .c{
+        width:100%;
+        padding:10px;
+    }
+    .c h1{
+        font-size: 1.25rem;
+        margin:10px;
+    }
+
+}

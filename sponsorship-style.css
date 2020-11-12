@@ -1,0 +1,94 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    width:100%;
+    height:100vh;
+    font-family: 'Crimson Pro',"serif";
+    z-index:1;
+    background-color: rgba(0,0,0,0.8);
+    color:white;
+    overflow-x: hidden;
+}
+.navbar{
+    color: rgba(255,255,255,1);
+    font-size: 1.2rem;
+    width: 100%;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255,255,255,1);
+}
+.dropdown-menu{
+    background-color: rgb(209, 208, 208);
+}
+.dropdown-toggle::after {
+    display: none;
+    margin-left: 0;
+    vertical-align:0;
+    content: "";
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 0;
+    border-left: 0;
+}
+.first{
+    padding-top:8%;
+}
+.sponsorship{
+    font-family: 'Metal Mania', cursive;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+}
+.pics{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow-x: hidden;
+}
+.pics a{
+    margin: 40px;
+}
+.pics img{
+    border-radius: 5px;
+}
+
+
+@keyframes appear{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .first{
+        padding-top:25%;
+    }
+    .pics a{
+        margin: 15px;
+    }
+    .pics{
+        width:90%
+    }
+    .pics img{
+        width:100%;
+        height:100%;
+    }
+    .pics a{
+        max-width: 40%;
+    }
+}

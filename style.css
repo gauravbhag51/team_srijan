@@ -1,0 +1,328 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+.body{
+    width:100%;
+    height:100%;
+    font-family: 'Crimson Pro',serif;
+    z-index:1;
+}
+
+.intro{
+    overflow-x: hidden;
+    position: relative;
+    width:100%;
+    height:100vh;
+    z-index: -1;
+}
+.intro-pic{
+    width: 100%;
+    height:100vh;
+    z-index:-1000;
+    object-fit: cover;
+    /* opacity: 0; */
+}
+.logo-container{
+    position: absolute;
+    top:28%;
+    left:60%;
+    transform: translate(-50%,-15%);
+    text-align: center;
+    font-family: 'Metal Mania', cursive;
+    color:rgb(140, 24, 25);
+    width:100%;
+    z-index: 1;
+}
+.logo{
+    width:15%;
+    height:10%;
+    margin:10px;
+    margin-top: 0;
+    opacity: 0;
+    transition: all 0.5s ease-in;
+    animation: appear 0.5s 1;
+}
+.motto{
+    text-shadow: -2px 2px 3px black;
+    font-size: 2rem;
+    opacity: 0;
+    transition: all 0.5s ease-in;
+    animation: appear 0.5s 1 1s;
+}
+.black{
+    color:rgb(20, 20, 20);
+    text-shadow: none;
+    display: inline;
+}
+.red{
+    display:inline;
+}
+
+.about-us{
+    overflow-x: hidden;
+    overflow-x:initial;
+    display: flex;
+    width:100%;
+    height: 100vh;
+    background-color:rgba(255, 153, 51,0.5);
+    align-items: center;
+    color: white;
+    font-size: medium;
+}
+.about-video{
+    width:50%;
+    padding:25px;
+}
+.content{
+    width:50%;
+    padding:25px 50px 25px 25px;
+    text-align: center;
+}
+.content h2{
+    margin-bottom:25px;
+    text-decoration: underline double;
+    color:black;
+}
+.content p{
+    font-size: 1.2rem;
+}
+.about-video iframe{
+    width:100%;
+    height:400px;
+    padding:25px;
+    overflow: hidden;
+    border-radius: 35px;
+}
+
+.stats{
+    overflow-x: hidden;
+    width:100%;
+    display: flex;
+    background-color:rgba(255,255,255,.5);
+    text-align: center;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.box{
+    margin: 80px 0px;
+    color:black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.stat{
+    text-align: center;
+    width:150px;
+    height:150px;
+    border: solid black;
+    color:black;
+    border-radius: 75px;
+    margin-bottom: 10px;
+    transition: all 0.25s ease-in;
+}
+.stat h1{
+    margin-top:30%;
+}
+.stat:hover{
+    color: rgba(52,58,64);
+    background-color: white;
+
+}
+.contact-us{
+    overflow-x: hidden;
+    background-color:rgba(0,255,0, 0.5);
+    text-align: center;
+}
+.contact-us h1{
+    text-decoration: underline double;
+    color:black;
+    margin:25px;
+}
+.contact-details{
+    display: flex;
+}
+.map{
+    box-sizing: border-box;
+    text-align: center;
+    width:50%;
+    margin:35px;
+}
+.map iframe{
+    border-radius: 15px;
+    width:100%;
+    height:450px;
+}
+.details{
+    width:50%;
+    display:flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    margin:35px;
+    text-align: left;
+    color:black;
+    font-size:1.2rem;
+}
+.details h3{
+    font-weight: 800;
+}
+.details a{
+    color:black;
+}
+footer{
+    display:block;
+    padding:30px 20px 30px 30px ;
+    background-color: black;
+}
+.foot a{
+    margin:1%;
+}
+
+/* ANIMATIONS */
+
+@keyframes appear{
+    from{
+        opacity: 0;
+    }
+    to
+    {
+        opacity: 1;
+    }
+}
+/* MOBILE SCREEN */
+@media screen and (max-width: 800px){
+
+
+    .preloader img{
+        width:25%;
+    }
+    .load-header{
+        position: absolute;
+        top:60%;
+        left:50%;
+        transform: translate(-50%,-50%);
+        /* width: 100%; */
+        text-align: center;
+        box-sizing: border-box;
+        margin:0px;
+        font-size: 40px;
+        font-weight: 500;
+        color: rgb(255, 255, 255);
+    }
+    @keyframes move{
+        from{
+            left:0;
+        }
+        to
+        {
+            left:75%;
+        }
+    }
+
+    
+    .body{
+        width:100%;
+        height:100%;
+    }
+    .motto span{
+        display: block;
+        width:100%
+    }
+    .logo{
+        width:30%;
+        height:25%;
+        margin:10px;
+    }
+    .motto{
+        font-size: 1.2rem;
+    }
+    .logo-container{
+        position: absolute;
+        top:28%;
+        left:50%;
+    }
+    .intro{
+        width:100%;
+        height:100vh;
+        background: url("assets/mobile1.jpg") no-repeat;
+        background-size: cover;
+    }
+    .about-video{
+        width:100%;
+        padding:25px;
+    }
+    .content{
+        width:100%;
+        padding: 25px;
+    }
+    .about-video iframe{
+        width:100%;
+        height:350px;
+        padding:25px;
+        border-radius: 30px;
+    }
+    .about-us{
+        flex-direction: column;
+        width:100%;
+        height: auto;
+        align-items: center;
+        color: white;
+        font-size: medium;
+    }
+    .stats{
+        width:100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .box{
+        margin: 20px 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+    }
+    .stat{
+        width:150px;
+        height:150px;
+        border-radius: 75px;
+        margin-bottom: 10px;
+    }
+    .stat h1{
+        margin-top:30%;
+    }
+    .stat:hover{
+        background: white;
+        color:black;
+    }
+    .contact-details{
+        display: flex;
+        flex-direction: column;
+    }
+    .map{
+        width:100%;
+        margin:0px;
+        padding:15px;
+    }
+    .details{
+        width:100%;
+        width:100%;
+        margin:0px;
+        padding:15px;
+    }
+    .details h3{
+        font-size:1.2rem;
+    }
+}
+
+
+
+

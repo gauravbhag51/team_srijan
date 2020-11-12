@@ -1,0 +1,98 @@
+
+.intro{
+    overflow-x: hidden;
+    position: absolute;
+    width:100%;
+    height:100vh;
+    z-index: -1;
+}
+.intro-pic{
+    width: 100%;
+    height:100vh;
+    z-index:-1000;
+    object-fit: cover;
+    /* opacity: 0; */
+}
+.content{
+    background-color: rgba(52,58,64,0.85);
+}
+.message{
+    display:flex;
+    padding-top: 90px;
+    width:100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.message .name{
+    font-size: 25px;
+    width:70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: flex-end;
+    font-family: 'Metal Mania', cursive;
+    color:blanchedalmond;
+    /* margin: 10px; */
+}
+.cap{
+    text-align: center;
+}
+.message p{
+    width:70%;
+    font-size: 1.25rem;
+    text-align: justify;
+    font-family: 'Crimson Pro',serif;
+    margin-bottom: 0;
+}
+.b{
+    font-size: 1.5rem;
+}
+.support{
+    width: 100%;
+    padding-top: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.support h1, h3{
+    font-family: 'Metal Mania', cursive;
+    color:blanchedalmond;
+}
+.support ul{
+    width: 70%;
+    font-size: 1.25rem;
+}
+.support ul li{
+    margin-bottom: 20px;
+}
+.quotes
+{
+    font-size: 50px; 
+    font-family: 'Secular One', sans-serif;
+}
+@media screen and (max-width: 800px){
+.message p{
+    width:90%;
+    font-size: 1rem;
+}
+.b{
+    font-size: 1.25rem;
+}
+.quotes{
+    font-size: 25px;
+}
+.support h1{
+   font-size: 1.5rem;
+   text-align: center;
+}
+.support h3{
+    font-size: 1rem;
+    text-align: center;
+ }
+ .support ul{
+    width: 80%;
+    font-size: 1.25rem;
+}
+}
